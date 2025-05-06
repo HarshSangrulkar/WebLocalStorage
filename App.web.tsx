@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { database } from './data/database';
 import { _RawRecord } from '@nozbe/watermelondb/RawRecord';
-
+import SvgIcon from './svg/SvgIcon.svg'
 // Define the type for a note record
 type Note = {
     id: string;
@@ -114,6 +114,7 @@ const App = () => {
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
+            <SvgIcon width={50} height={50} fill="#FF5733" />
             {showCard && (
                 <View style={styles.card}>
                     <Text style={styles.cardTitle}>
